@@ -1,22 +1,97 @@
 html, body {
   font-family: 'Heebo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #E5E5E5;
 }
 
-.blog-item h3 {
+h1, p, h3, h2, h4 {
+  margin: 0;
+}
+
+
+header nav {
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 60px;
+}
+
+header nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+header nav li {
+  list-style: none;
+}
+
+header nav li a {
+  text-decoration: none;
   font-weight: 500;
-  font-size: 30px;
-  line-height: 44px;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: right;
+
+  color: #000000;
+}
+
+/* hero section */
+
+.hero-section {
+  background-color: #fff;
+  /* padding-top: 158px;
+  padding-bottom: 158px; */
+  padding: 158px 0;
+}
+
+.hero-section .hero-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .hero-inner .col-left {
+  max-width: 497px;
+}
+
+.hero-section .hero-inner .col-left h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
   color: #21243D;
 }
 
-.blog-item p {
-  background-color: red;
+.hero-section .hero-inner .col-left p {
+  margin-top: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243D;
 }
 
-.blog-item .published-date {
-  background-color: green;
+.hero-section .hero-inner .col-left .action-button {
+  margin-top: 38px;
+  background: #FF6464;
+  border-radius: 2px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  max-width: fit-content;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+
+  color: #FFFFFF;
 }
 
-.blog-item .category {
-  background-color: blue;
+.hero-section .hero-inner .col-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
