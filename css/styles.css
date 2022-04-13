@@ -230,10 +230,6 @@ header nav li a {
 }
 
 @media all and (max-width: 600px) {
-  header nav {
-    background-color: red;
-  }
-
   .hero-section .hero-inner {
     flex-direction: column-reverse;
   }
