@@ -95,3 +95,158 @@ header nav li a {
   justify-content: flex-end;
   align-items: center;
 }
+
+.posts-section {
+  background-color: #EDF7FA;
+  padding: 32px 0;
+}
+
+.featured-section {
+  background-color: #FFF;
+  padding: 32px 0;
+}
+
+.posts-section-inner,
+.featured-section-inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.posts-section .posts-header h2 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243D;
+}
+
+.posts-section .posts-header a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #00A8CC;
+  text-decoration: none;
+}
+
+.posts-section .posts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.posts {
+  display: flex;
+  gap: 20px;
+}
+
+.posts .post-item {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.posts .post-item header h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38px;
+  color: #21243D;
+  margin-bottom: 16px;
+}
+
+.posts .post-item .meta {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #21243D;
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.posts .post-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243D;
+}
+
+/* Featured section styles */
+
+.featured-section .fs-header h2 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243D;
+  margin-bottom: 22px;
+}
+
+.fs-list .fs-item {
+  display: flex;
+  gap: 18px;
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+}
+
+.fs-item h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 44px;
+  color: #21243D;
+  margin-bottom: 16px;
+}
+
+.fs-item .item-meta {
+  display: flex;
+  gap: 26px;
+}
+
+.fs-item .item-meta .badge {
+  width: 62px;
+  height: 25px;
+  background: #142850;
+  border-radius: 16px;
+  font-weight: 900;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.fs-item .item-meta .category {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #8695A4;
+}
+
+.fs-item .description {
+  margin-top: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243D;
+}
+
+@media all and (max-width: 600px) {
+  header nav {
+    background-color: red;
+  }
+
+  .hero-section .hero-inner {
+    flex-direction: column-reverse;
+  }
+
+  .hero-section .col-right {
+    margin-bottom: 30px;
+  }
+  .hero-section .col-left {
+    text-align: center;
+    margin: 0 20px;
+  }
+  .hero-section .col-left .action-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
